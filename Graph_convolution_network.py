@@ -169,7 +169,7 @@ class MoleculeDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         return self.data_list[idx]
     
-dataset = MoleculeDataset(csv_path='C:/Users/horik/Documents/logSdataset1290.csv')
+dataset = MoleculeDataset(csv_path='logSdataset1290.csv')
 test_size = 0.2
 val_size = 0.2
 train_val_data, test_data = train_test_split(dataset, test_size=test_size,random_state=42)
